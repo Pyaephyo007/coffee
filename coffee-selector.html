@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bean Botique Coffee Shop</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Header Start -->
+	<header class="header">
+
+		<div class="icons">
+			<div class="fas fa-bars" id="menu-btn"></div>
+		</div>
+
+		<a href="#" class="logo">
+			<img src="images/cologo.png">
+		</a>
+
+		<nav class="navbar">
+			    <i class="fas fa-xmark" id="close-btn"></i>
+			          <a href="index.html">Home</a>
+                                 <li class="dropdown">
+        <a id="active" href="#" class="dropdown-toggle">Coffee Selection <i class="fas fa-caret-down"></i></a>
+        <ul class="dropdown-menu">
+            <li><a id="active" href="#">Espresso</a></li>
+            <li><a href="#">Cappuccino</a></li>
+            <li><a href="#">Latte</a></li>
+        </ul>
+    </li>
+                <a href="brewing-equipment.html">Brewing Equipment</a>
+                <a href="event.html">Events and Workshops</a>
+                <a href="#">Special Offers and Subscritions</a>
+                <a href="#">Contant us</a>
+		</nav>
+
+		<div class="icons">
+			<div class="fas fa-search" id="search-btn"></div>
+			<div class="fas fa-shopping-cart icon-cart" id="cart-btn"><span>0</span></div>
+
+		</div>
+
+		<div class="search-form">
+			<input type="search" id="search-box" placeholder="search  products...">
+			<label for="search-box" class="fas fa-search"></label>
+		</div>
+		
+	</header>
+
+	<!-- Shopping Cart -->
+
+	<div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            show item here
+        </div>
+        <div class="cartBtn">
+            <button class="close">Close</button>
+            <button class="checkOut">
+                Check Out
+            </button>
+        </div>
+    </div> 
+
+	<!-- Header End -->
+
+	<!-- Product -->
+  <div class="menu-container cs" id="product">
+    <h1 class="heading"><span>Our </span>Products</h1>
+
+    <div class="pd-container">
+    <div class="product" data-name="p-1">
+      <img src="images/Expresso.jpg" alt="">
+      <h3>1lb Decaf World Blend '63 Espresso</h3>
+      <div class="price">$25.45</div>
+      <!-- <button class="btn">Details Here</button> -->
+   </div>
+    <div class="product" data-name="p-2">
+      <img src="images/Expresso.jpg" alt="">
+      <h3>1lb World Blend '63 Espresso Coffee</h3>
+      <div class="price">$23.45</div>
+   </div>
+   <div class="product" data-name="p-3">
+      <img src="images/Expresso.jpg" alt="">
+      <h3>Original Line Compatible World Blend '63 Espresso</h3>
+      <div class="price">$20.45</div>
+    </div>
+    <div class="product" data-name="p-4">
+      <img src="images/ItalianEspresso.jpg" alt="">
+      <h3>CBTL Premium Decaf Espresso Coffee Capsule</h3>
+      <div class="price">$12.27</div>
+   </div>
+   <div class="product" data-name="p-5">
+      <img src="images/ItalianEspresso.jpg" alt="">
+      <h3>CBTL Italian Espresso Coffee Capsule</h3>
+      <div class="price">$9.95</div>
+   </div>
+    <div class="product" data-name="p-6">
+      <img src="images/ItalianEspresso.jpg" alt="">
+      <h3>CBTL Premium Espresso Coffee Capsules</h3>
+      <div class="price">$15.65</div>
+    </div>
+ </div>
+ <!-- Detail Here -->
+ <div class="products-preview">
+  <div class="preview" data-target="p-1">
+    <i class="fas fa-times"></i> 
+    <img src="images/Expresso.jpg" alt="">
+    <h3>1lb Decaf World Blend '63 Espresso</h3>
+    <div class="stars">
+      <i class="fas fa-star" ></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span> ( 250 )</span>
+    </div>
+    <p>Enjoy the rich taste of our Decaf Espresso Roast Blend, crafted from four perfectly roasted origins. Smooth enough for a straight shot and bold enough for a latte, it's perfect any time of day or night
+    </p>
+    <div class="price">$25.45</div>
+    <div class="buttons">
+      <a href="#" class="buy">Buy Now</a>
+      <a href="#" class="cart">Add to cart</a>
+    </div>
+  </div>
+  <div class="preview" data-target="p-2">
+    <i class="fas fa-times"></i> 
+    <img src="../images/pd1.jpg" alt="">
+    <h3>1lb World Blend '63 Espresso Coffee</h3>
+    <div class="stars">
+      <i class="fas fa-star" ></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span> ( 250 )</span>
+    </div>
+    <p>The World Blend '63 Espresso combines roasts from Costa Rica, Sumatra, Papua New Guinea, Guatemala, and Brazil for a silky-smooth flavor profile. Sweet, balanced, and rich, it's perfect for straight shots or lattes at home.
+    </p>
+    <div class="price">$23.45</div>
+    <div class="buttons">
+      <a herf="#" class="buy">Buy Now</a>
+      <a href="#" class="cart">Add to cart</a>
+    </div>
+  </div>
+ <div class="preview" data-target="p-3">
+    <i class="fas fa-times"></i> 
+    <img src="../images/pd1.jpg" alt="">
+    <h3>Original Line Compatible World Blend '63 Espresso</h3>
+    <div class="stars">
+      <i class="fas fa-star" ></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span> ( 250 )</span>
+    </div>
+    <p>Enjoy Coffee Bean & Tea Leaf's World Blend '63 Espresso capsules, compatible with Nespresso® Original Line brewers. This dark roast delivers a delicate plum aroma, hints of dates and hazelnuts, and a rich, syrupy finish. Includes 10 capsules.
+    </p>
+    <div class="price">$20.45</div>
+    <div class="buttons">
+      <a href="#" class="buy">Buy Now</a>
+      <a href="#" class="cart">Add to cart</a>
+    </div>
+  </div>
+  <div class="preview" data-target="p-4">
+    <i class="fas fa-times"></i> 
+    <img src="../images/ItalianEspresso.jpg" alt="">
+    <h3>CBTL Premium Decaf Espresso Coffee Capsule</h3>
+    <div class="stars">
+      <i class="fas fa-star" ></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span> ( 250 )</span>
+    </div>
+    <p>CBTL Premium Decaf Espresso capsules offer smooth espresso with a velvety body, caramel aroma, earthy notes, and a bittersweet finish. Each pod contains premium decaffeinated Arabica coffee, compatible with CBTL Caffitaly brewers.
+    </p>
+    <div class="price">$12.27</div>
+    <div class="buttons">
+      <a href="#" class="buy">Buy Now</a>
+      <a href="#" class="cart">Add to cart</a>
+    </div>
+  </div>
+  <div class="preview" data-target="p-5">
+    <i class="fas fa-times"></i> 
+    <img src="../images/ItalianEspresso.jpg" alt="">
+    <h3>CBTL Italian Espresso Coffee Capsule</h3>
+    <div class="stars">
+      <i class="fas fa-star" ></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span> ( 250 )</span>
+    </div>
+    <p>CBTL Italian Espresso capsules deliver rich espresso with a deep roast, smoky aroma, and chocolaty finish. Each pack includes 10 pods of premium 100% Arabica coffee, compatible with CBTL Caffitaly brewers.
+    </p>
+    <div class="price">$9.95</div>
+    <div class="buttons">
+      <a href="#" class="buy">Buy Now</a>
+      <a href="#" class="cart">Add to cart</a>
+    </div>
+  </div>
+
+  <div class="preview" data-target="p-6">
+    <i class="fas fa-times"></i> 
+    <img src="../images/ItalianEspresso.jpg" alt="">
+    <h3>CBTL Premium Espresso Coffee Capsules</h3>
+    <div class="stars">
+      <i class="fas fa-star" ></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span> ( 250 )</span>
+    </div>
+    <p>CBTL Premium Espresso capsules deliver rich espresso with a velvety body, caramel aroma, earthy flavor, and bittersweet finish. Each pod contains premium Arabica coffee and works with CBTL Caffitaly brewers. A top seller!
+    </p>
+    <div class="price">$15.65</div>
+    <div class="buttons">
+      <a href="#" class="buy">Buy Now</a>
+      <a href="#" class="cart">Add to cart</a>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-column">
+                <h4>INFORMATION</h4>
+                <a href="index.html" class="col">Home</a>
+                <a href="#" class="col"> Coffee Selection</a>
+                <a href="#" class="col">Brewing Equipment</a>
+                <a href="#" class="col">Events and Workshops</a>
+                <a href="#" class="col">Special Offers and Subscriptions</a>
+                <a href="#" class="col">Brewing Equipment</a>
+                <a href="#" class="col">Contact Us</a>
+          </div>
+          <div class="footer-column">
+              <h4>FOLLOW US</h4>
+              <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+              <div class="social-icons">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-solid fa-square-envelope"></i></a>
+              </div>
+          </div>
+          <div class="footer-column">
+              <h4>OPEN HOURS</h4>
+              <p>Monday-Friday: 8:00 AM - 8:00 PM</p>
+              <p>Saturaday & Sunday: 2:00 PM - 8:00 PM</p>
+          </div>
+          <div class="footer-column">
+            <h4>INSTAGRAM</h4>
+            <div class="instagram">
+              <img src="images/pd1.jpg" >
+              <img src="images/pd2.jpg" >
+              <img src="images/pd3.jpg" >
+              <img src="images/pd4.jpg" >
+              <img src="images/pd5.jpg" >
+              <img src="images/pd6.jpg" >
+            </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>Copyright © <span id="year">2024</span> <span class="domain-name">https://www.BeanBotiqueCoffeeShop</span>. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="checkout-left">
+            <h3>Account</h3>
+            <p>ppyae6915@gmail.com</p>
+            <label>
+                <input type="checkbox"> Email me with news and offers
+            </label>
+            <h3>Delivery</h3>
+            <div class="delivery-method">
+                <label>
+                    <input type="radio" name="delivery" checked> Ship
+                </label>
+                <label>
+                    <input type="radio" name="delivery"> Pickup in store
+                </label>
+            </div>
+            <form class="address-form">
+                <label>Country/Region</label>
+                <select>
+                    <option>Myanmar (Burma)</option>
+                    <option>United States</option>
+                </select>
+                <div class="name-fields">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <input type="text" placeholder="Company (optional)">
+                <input type="text" placeholder="Address">
+                <input type="text" placeholder="Apartment, suite, etc. (optional)">
+                <div class="name-fields">
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="Postal Code">
+                </div>
+                <input type="text" placeholder="Phone">
+            </form>
+            <h3>Payment</h3>
+            <div class="payment-method">
+                <label>
+                    <input type="radio" name="payment" checked> Pay at store
+                </label>
+                <label>
+                    <input type="radio" name="payment"> Credit/Debit Card
+                </label>
+            </div>
+        </div>
+        <div class="checkout-right">
+            <div class="cart-summary">
+                <div class="cart-item">
+                    <img src="phone.jpg" alt="Product" class="product-image">
+                    <div class="product-info">
+                        <h4>iPhone 16 Pro</h4>
+                        <p>1TB / Desert Titanium</p>
+                        <div class="quantity">
+                            <button class="decrease">-</button>
+                            <span class="count">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <p class="price">K 7,650,000</p>
+                    </div>
+                </div>
+                <input type="text" placeholder="Gift card" class="gift-card">
+                <button class="apply-btn">Apply</button>
+                <div class="price-summary">
+                    <p>Subtotal: <span class="subtotal">K 7,650,000</span></p>
+                    <p>Shipping: <span class="shipping">Enter shipping address</span></p>
+                    <h4>Total: <span class="total">K 7,650,000</span></h4>
+                </div>
+                <button class="complete-order">Complete Order</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

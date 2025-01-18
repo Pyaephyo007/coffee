@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bean Botique Coffee Shop</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Header Start -->
+	<header class="header">
+
+		<div class="icons">
+			<div class="fas fa-bars" id="menu-btn"></div>
+		</div>
+
+		<a href="#" class="logo">
+			<img src="images/cologo.png">
+		</a>
+
+		<nav class="navbar">
+			    <i class="fas fa-xmark" id="close-btn"></i>
+			          <a href="index.html">Home</a>
+                <a href="coffee-selector.html">Coffee Selection</a>
+                <a href="brewing-equipment.html">Brewing Equipment</a>
+                <a id="active" href="#">Events and Workshops</a>
+                <a href="#">Special Offers and Subscritions</a>
+                <a href="#">Contant us</a>
+		</nav>
+
+		<div class="icons">
+			<div class="fas fa-search" id="search-btn"></div>
+			<div class="fas fa-shopping-cart icon-cart" id="cart-btn"><span>0</span></div>
+
+		</div>
+
+		<div class="search-form">
+			<input type="search" id="search-box" placeholder="search  products...">
+			<label for="search-box" class="fas fa-search"></label>
+		</div>
+		
+	</header>
+
+	<!-- Shopping Cart -->
+
+	<div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            show item here
+        </div>
+        <div class="cartBtn">
+            <button class="close">Close</button>
+            <button class="checkOut">
+                Check Out
+            </button>
+        </div>
+    </div> 
+
+	<!-- Header End -->
+    <main>
+        <section class="welcome-section">
+          <div class="welcome-container">
+              <div class="welcome-text">
+                  <h1>Coffee Tasting</h1>
+                  <p>
+
+Join us at Bean Boutique Coffee Shop for a journey into the world of premium coffee! Explore the unique flavors of our signature blends, learn expert brewing techniques, and enjoy hands-on demos with espresso machines and more.<br>
+
+When: [Date & Time]<br>
+Where: [Address]<br>
+
+Perks: Free samples, exclusive discounts, and a chance to win a Coffee Lover’s Gift Basket!
+
+Reserve your spot now—space is limited!</p>
+              </div>
+              <div class="welcome-image">
+                  <img src="images/coffeetasting(1).jpg" alt="Coffee Shop">
+              </div>
+          </div>
+      </section>
+    
+      
+       <!-- Events Section -->
+    <section class="events-workshops">
+        <!-- First Event -->
+        <div class="event-card">
+            <div class="event-image left">
+                <img src="images/coffeeevent11.jpg" alt="Coffee History Night" class="animate-image">
+            </div>
+            <div class="event-content right">
+                <h2>Coffee History Night: From Bean to Brew</h2>
+                <p><strong>Date:</strong> Wednesday, April 10, 2025</p>
+                <p><strong>Time:</strong> 7:00 PM - 9:00 PM</p>
+                <p class="description">
+                    Dive into the rich history of coffee with an interactive storytelling session. Learn about coffee’s journey across continents and how it became the global phenomenon it is today.
+                </p>
+                <ul>
+                    <li>Presentation on the origins and evolution of coffee.</li>
+                    <li>Interactive Q&A session with coffee historians.</li>
+                    <li>Free samples of historical brewing styles.</li>
+                </ul>
+                <p><strong>Price:</strong> $10 per person</p>
+                <button class="btn open-signup-popup">Sign Up</button>
+            </div>
+        </div>
+         <!-- Sign Up Popup -->
+<div id="signup-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text" id="signup-name" placeholder="Enter your name" required>
+            <input type="email" id="signup-email" placeholder="Enter your email" required>
+            <input type="password" id="signup-password" placeholder="Enter your password" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+        <!-- Second Event -->
+        <div class="event-card">
+            <div class="event-content left">
+                <h2>DIY Coffee Blend</h2>
+                <p><strong>Date:</strong> Saturday, April 20, 2025</p>
+                <p><strong>Time:</strong> 2:00 PM - 4:00 PM</p>
+                <p class="description">
+                    Ever wanted to create your own coffee blend? This workshop lets you mix and match beans from different regions to craft your signature coffee blend to take home.
+                </p>
+                <ul>
+                    <li>Guidance on blending techniques.</li>
+                    <li>Exploration of flavor profiles and tasting notes.</li>
+                    <li>Personalized packaging for your blend.</li>
+                </ul>
+                <p><strong>Price:</strong> $35 per person (includes materials)</p>
+                <button class="btn open-signin-popup">Register</button>
+            </div>
+            <div class="event-image right">
+                <img src="C:\Users\artof\Desktop\BeanBotiqueCoffeeShop\images\coffeeblend.png" alt="DIY Coffee Blend" class="animate-image">
+            </div>
+        </div>
+        <!-- Sign In Popup -->
+<div id="signin-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form>
+          
+            <input type="text" id="signup-name" placeholder="Enter your name" required>
+            
+            <input type="email" id="signin-email" placeholder="Enter your email" required>
+      
+            <input type="password" id="signin-password" placeholder="Enter your password" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+    </section>
+
+    <section class="team-section">
+        <h2>Meet the Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="images/more/testimonial-1.jpg" alt="John Doe">
+                </div>
+                <div class="member-info">
+                    <h3>John Doe</h3>
+                    <p>Founder & CEO</p>
+                    <div class="social-icons">
+                        <i class="fab fa-twitter animated-icon"></i>
+                        <i class="fab fa-linkedin animated-icon"></i>
+                        <i class="fab fa-instagram animated-icon"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="images/more/testimonial-2.jpg" alt="Jane Smith">
+                </div>
+                <div class="member-info">
+                    <h3>Jane Smith</h3>
+                    <p>Head Barista</p>
+                    <div class="social-icons">
+                        <i class="fab fa-twitter animated-icon"></i>
+                        <i class="fab fa-linkedin animated-icon"></i>
+                        <i class="fab fa-instagram animated-icon"></i>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+    
+    </main>
+  <script src="js/index.js"></script>
+
+</body>
+</html>

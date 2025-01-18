@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="shopping-cart">
+    <h1>SHOPPING CART</h1>
+    <div class="cart-item">
+      <img src="iphone16pro.jpg" alt="iPhone 16 Pro" class="product-image">
+      <div class="product-details">
+        <h2>iPhone 16 Pro</h2>
+        <p>Capacity: 1TB</p>
+        <p>Color: Desert Titanium</p>
+      </div>
+      <div class="price">7,650,000 MMK</div>
+      <div class="quantity">
+  <button class="qty-btn minus" onclick="updateQuantity(-1)">-</button>
+  <input type="text" id="quantity" value="1" readonly>
+  <button class="qty-btn plus" onclick="updateQuantity(1)">+</button>
+</div>
+      <div class="total-price">7,650,000 MMK</div>
+      <button class="delete-btn" onclick="removeItem()">🗑️</button>
+    </div>
+    <div class="cart-item">
+      <img src="iphone16pro.jpg" alt="iPhone 16 Pro" class="product-image">
+      <div class="product-details">
+        <h2>iPhone 16 Pro</h2>
+        <p>Capacity: 1TB</p>
+        <p>Color: Desert Titanium</p>
+      </div>
+      <div class="price">7,650,000 MMK</div>
+      <div class="quantity">
+  <button class="qty-btn minus" onclick="updateQuantity(-1)">-</button>
+  <input type="text" id="quantity" value="1" readonly>
+  <button class="qty-btn plus" onclick="updateQuantity(1)">+</button>
+</div>
+      <div class="total-price">7,650,000 MMK</div>
+      <button class="delete-btn" onclick="removeItem()">🗑️</button>
+    </div>
+    <div class="cart-item">
+      <img src="iphone16pro.jpg" alt="iPhone 16 Pro" class="product-image">
+      <div class="product-details">
+        <h2>iPhone 16 Pro</h2>
+        <p>Capacity: 1TB</p>
+        <p>Color: Desert Titanium</p>
+      </div>
+      <div class="price">7,650,000 MMK</div>
+      <div class="quantity">
+  <button class="qty-btn minus" onclick="updateQuantity(-1)">-</button>
+  <input type="text" id="quantity" value="1" readonly>
+  <button class="qty-btn plus" onclick="updateQuantity(1)">+</button>
+</div>
+      <div class="total-price">7,650,000 MMK</div>
+      <button class="delete-btn" onclick="removeItem()">🗑️</button>
+    </div>
+    <div class="cart-actions">
+      <button class="continue-btn">Continue Shopping</button>
+      <button class="clear-btn" onclick="clearCart()">Clear Shopping Cart</button>
+    </div>
+    <div class="cart-summary">
+      <textarea placeholder="Add special instructions for your order..."></textarea>
+      <div class="totals">
+        <p>Subtotal: <span id="subtotal">7,650,000 MMK</span></p>
+        <p>Grand Total: <span id="grand-total">7,650,000 MMK</span></p>
+      </div>
+       <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
